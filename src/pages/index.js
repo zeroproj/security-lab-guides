@@ -1,43 +1,52 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import React from 'react';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import Link from '@docusaurus/Link';
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
+      title="Security Lab Guides"
+      description="Guias e laboratórios práticos de segurança da informação com ferramentas open source"
+    >
+      <main
+        style={{
+          padding: '4rem 2rem',
+          maxWidth: '900px',
+          margin: '0 auto',
+          textAlign: 'center',
+        }}
+      >
+        <h1>Security Lab Guides</h1>
+
+        <p style={{ fontSize: '1.1rem', marginTop: '1.5rem' }}>
+          Um portal de <strong>documentação técnica e laboratórios práticos</strong> focado em
+          <strong> Segurança da Informação, Blue Team e SOC</strong>, utilizando
+          ferramentas <strong>open source</strong> amplamente usadas no mercado.
+        </p>
+
+        <p style={{ marginTop: '1rem' }}>
+          Aqui você encontrará guias passo a passo, cenários reais e explicações
+          práticas sobre ferramentas como <strong>Wazuh</strong>, <strong>OpenVAS</strong>
+          e outras soluções de segurança.
+        </p>
+
+        <div style={{ marginTop: '3rem' }}>
+          <Link
+            className="button button--primary button--lg"
+            to="/docs"
+          >
+            📘 Acessar Documentação
+          </Link>
+        </div>
+
+        <div style={{ marginTop: '4rem', fontSize: '0.95rem', opacity: 0.8 }}>
+          <p>
+            Conteúdo voltado para estudantes, analistas de segurança, profissionais
+            de SOC e entusiastas de cibersegurança.
+          </p>
+        </div>
       </main>
     </Layout>
   );
 }
+
