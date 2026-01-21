@@ -1,8 +1,9 @@
 ---
+title: "Introduction"
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Wazuh Lab Guides
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
