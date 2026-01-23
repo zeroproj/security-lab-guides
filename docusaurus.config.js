@@ -31,7 +31,6 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/docs', // 📘 Docs em /docs
-          editUrl: 'https://github.com/zeroproj/security-lab-guides/tree/main/',
         },
         blog: false, // ❌ sem blog
         theme: {
@@ -59,11 +58,11 @@ const config = {
           label: 'Documentação',
           position: 'left',
         },
-        {
-          href: 'https://github.com/zeroproj/security-lab-guides',
-          label: 'GitHub',
-          position: 'right',
-        },
+//        {
+//          href: 'https://github.com/zeroproj/security-lab-guides',
+//          label: 'GitHub',
+//          position: 'right',
+//        },
       ],
     },
     footer: {
@@ -81,10 +80,10 @@ const config = {
         {
           title: 'Projeto',
           items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/zeroproj/security-lab-guides',
-            },
+//            {
+//              label: 'GitHub',
+//              href: 'https://github.com/zeroproj/security-lab-guides',
+//            },
           ],
         },
       ],
